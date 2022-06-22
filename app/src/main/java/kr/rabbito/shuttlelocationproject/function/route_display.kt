@@ -41,6 +41,7 @@ fun showRoute(googleMap: GoogleMap, route_up: Array<LatLng>, route_down: Array<L
         mMap.addPolyline(polylineOptions)
     }
 
+
     /*
     Clearbut.setOnClickListener{
         mMap.clear()

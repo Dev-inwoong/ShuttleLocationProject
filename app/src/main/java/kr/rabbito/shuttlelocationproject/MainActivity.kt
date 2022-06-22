@@ -21,10 +21,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
-import kr.rabbito.shuttlelocationproject.data.Location
-import kr.rabbito.shuttlelocationproject.data.tuk_route
-import kr.rabbito.shuttlelocationproject.data.tuk_route_down
-import kr.rabbito.shuttlelocationproject.data.tuk_route_up
+import kr.rabbito.shuttlelocationproject.data.*
 import kr.rabbito.shuttlelocationproject.databinding.ActivityMainBinding
 import kr.rabbito.shuttlelocationproject.function.hashSHA256
 import kr.rabbito.shuttlelocationproject.function.setChildEventListener
@@ -157,15 +154,15 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             map.uiSettings.isMyLocationButtonEnabled = true
         }
 
-        val start_loc = LatLng(37.345417, 126.738568)
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(start_loc, 14.5f))
+        val start_loc = LatLng(37.336375, 126.723898)
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(start_loc, 13.3f))
         // Add a marker in Sydney and move the camera
         //val yeouido = LatLng(37.521814, 126.923596)
         //map.addMarker(MarkerOptions().position(yeouido).title("Marker in Yeouido"))
         //map.moveCamera(CameraUpdateFactory.newLatLng(yeouido))
 
 
-        showRoute(map, tuk_route_up, tuk_route_down)
+        showRoute(map, siheung_3_up, siheung_3_down)
         setChildEventListener(postList, map, "Driver/tuk")
     }
 
