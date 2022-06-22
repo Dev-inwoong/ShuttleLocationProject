@@ -41,7 +41,7 @@
         android:layout_marginTop="17dp"
         android:fontFamily="@font/pretendard_medium"
         android:includeFontPadding="false"
-        android:text="한국공학대학교"
+        android:text="시흥 3노선"
         android:textColor="@color/colorBlack"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/main_icon_sb_Menu"
