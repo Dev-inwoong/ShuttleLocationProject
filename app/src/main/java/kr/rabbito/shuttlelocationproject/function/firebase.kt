@@ -84,7 +84,7 @@ fun setChildEventListener(postList: MutableList<Location>, map: GoogleMap, path:
 
 fun showMarkersOnMap(list: MutableList<Location>, map: GoogleMap) {
     map.clear()
-    showRoute(map, tuk_route_up, tuk_route_down)
+    showRoute(map, siheung_3_up, siheung_3_down)
     for (i in list.indices) {
         showMarker(map, list[i].driverName, list[i].latitude, list[i].longitude)
     }
