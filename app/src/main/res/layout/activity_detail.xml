@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/pretendard_regular"
         android:includeFontPadding="false"
-        android:text="070-8895-7597"
+        android:text="070-8895-7566"
         android:layout_marginStart="6dp"
         android:textColor="@color/colorPrimary"
         android:textSize="12sp"
